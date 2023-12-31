@@ -1,0 +1,187 @@
+.post {
+    border-radius: 12px;
+    border: 1px solid #FFF;
+    background: #FFF;
+    margin-block: 10px;
+
+    img.profile-pic {
+        width: 42px;
+        height: 42px;
+    }
+
+    .details-container {
+        padding: 15px;
+
+        .header {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+
+            .name-date-container {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+
+                .name {
+                    color: #2D3139;
+                    font-family: Outfit;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                .date {
+                    color: #92929D;
+                    font-family: Outfit;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+
+        .content {
+            padding-block: 15px;
+
+            .post-text {
+                color: #2D3139;
+                font-family: Outfit;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .images-container {
+                box-sizing: border-box;
+                display: flex;
+                gap: 10px;
+                height: 330px;
+                margin-top: 20px;
+
+                img {
+                    object-fit: cover;
+                    border-radius: 12px;
+                    cursor: pointer;
+                }
+
+                .west {
+                    box-sizing: border-box;
+                    width: 50%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .east {
+                    box-sizing: border-box;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+
+                    img {
+                        width: 100%;
+                        flex-grow: 1;
+                        flex-basis: 0;
+                    }
+                }
+            }
+        }
+
+        .actions-container {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 15px;
+
+            .action {
+                display: flex;
+                gap: 10px;
+                align-items: center;
+                cursor: pointer;
+
+                img {
+                    width: 18px;
+                    height: 18px;
+                }
+
+                .detail {
+                    color: #9D9DAF;
+                    font-family: "Open Sans";
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    .comment-container {
+        padding: 15px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+
+        .comment-box {
+            flex-grow: 1;
+            border-radius: 8px;
+            background: #F4F5F7;
+            padding: 8px;
+
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            img {
+                cursor: pointer;
+            }
+
+            ::placeholder {
+                color: #9D9DAF;
+                font-family: "Open Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                vertical-align: middle;
+                align-self: center;
+
+            }
+
+            ::-ms-input-placeholder {
+                color: #9D9DAF;
+                font-family: "Open Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                align-self: center;
+            }
+
+
+            textarea {
+                margin: 0;
+                flex-grow: 1;
+                box-sizing: border-box;
+                flex-grow: 1;
+                border: none;
+                outline: none;
+                resize: none;
+                height: 100%;
+                background-color: transparent;
+
+                font-family: "Open Sans";
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+    }
+}

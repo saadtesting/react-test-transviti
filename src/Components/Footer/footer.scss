@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+
+    .link {
+        color: #9D9DAF;
+        font-family: Outfit;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .line-1, .line-2, .line-3 {
+        display: flex;
+        gap: 14px;
+    }
+}
